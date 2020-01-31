@@ -22,13 +22,12 @@ f.close()
 # using BST to improve speed
 
 duplicates = []
-bst_1 = BinarySearchTree("test1")
-bst_2 = BinarySearchTree("test2")
+bst = BinarySearchTree("names")
 
 for name_1 in names_1:
-    bst_1.insert(name_1)
+    bst.insert(name_1)
 for name_2 in names_2:
-    if bst_1.contains(name_2):
+    if bst.contains(name_2):
         duplicates.append(name_2)
 
 end_time = time.time()
